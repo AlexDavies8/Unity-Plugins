@@ -1,0 +1,3 @@
+[submodule "Plugins/UnityPluginTemplate"]
+	path = Plugins/UnityPluginTemplate
+	url = https://github.com/AlexDavies8/UnityPluginTemplate.git
