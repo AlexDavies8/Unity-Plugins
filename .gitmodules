@@ -1,3 +1,6 @@
 [submodule "Plugins/UnityPluginTemplate"]
 	path = Plugins/UnityPluginTemplate
 	url = https://github.com/AlexDavies8/UnityPluginTemplate.git
+[submodule "Plugins/MonoBinder"]
+	path = Plugins/MonoBinder
+	url = https://github.com/AlexDavies8/MonoBinder.git
