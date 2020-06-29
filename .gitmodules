@@ -4,3 +4,6 @@
 [submodule "Plugins/MonoBinder"]
 	path = Plugins/MonoBinder
 	url = https://github.com/AlexDavies8/MonoBinder.git
+[submodule "Plugins/unity-aseprite-importer"]
+	path = Plugins/unity-aseprite-importer
+	url = https://github.com/AlexDavies8/unity-aseprite-importer.git
