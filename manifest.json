@@ -1,0 +1,14 @@
+{
+    "Data": [
+        {
+            "name":"Aseprite Importer",
+            "description":"An asset-importer for aseprite files. Supports animation and tilemaps",
+            "path":"Plugins/unity-aseprite-importer"
+        },
+        {
+            "name":"MonoBinder",
+            "description":"A small binding framework built primarily for UI.",
+            "path":"Plugins/MonoBinder"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <editor:Toolbar>
+        <editor:ToolbarSearchField/>
+    </editor:Toolbar>
+    
+    <engine:VisualElement name="container">
+        
+        <engine:VisualElement name="left-container">
+            <engine:ListView name="list-view" binding-path="Data" show-bound-collection-size="false" selection-type="Single"/>
+        </engine:VisualElement>
+
+        <engine:Box class="vertical-line"/>
+        
+        <engine:VisualElement name="right-container">
+            
+            <engine:VisualElement name="plugin-data-container">
+                
+                <engine:Label name="plugin-title" text="title"/>
+                <engine:TextElement name="plugin-description" text="description"/>
+                
+            </engine:VisualElement>
+
+            <engine:VisualElement name="plugin-data-toolbar">
+                <engine:Button name="plugin-update-button" text="Install"/>
+                <engine:Button name="plugin-remove-button" text="Remove"/>
+            </engine:VisualElement>
+            
+        </engine:VisualElement>
+        
+    </engine:VisualElement>
+</engine:UXML>
