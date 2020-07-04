@@ -1,14 +1,45 @@
 {
-    "Data": [
-        {
-            "name":"Aseprite Importer",
-            "description":"An asset-importer for aseprite files. Supports animation and tilemaps",
-            "path":"Plugins/unity-aseprite-importer"
-        },
-        {
-            "name":"MonoBinder",
-            "description":"A small binding framework built primarily for UI.",
-            "path":"Plugins/MonoBinder"
-        }
-    ]
+   "Data":[
+      {
+         "name":"Aseprite Importer",
+         "description":"An asset-importer for aseprite files. Supports animation and tilemaps",
+         "path":"Plugins/unity-aseprite-importer",
+         "links":[
+            {
+                "name":"Github Repository",
+                "link":"https://github.com/AlexDavies8/unity-aseprite-importer"
+            },
+            {
+                "name":"Documentation and License",
+                "link":"https://github.com/AlexDavies8/unity-aseprite-importer/blob/master/README.md"
+            }
+         ]
+      },
+      {
+         "name":"MonoBinder",
+         "description":"A small binding framework built primarily for UI.",
+         "path":"Plugins/MonoBinder",
+         "links":[
+            {
+                "name":"Github Repository",
+                "link":"https://github.com/AlexDavies8/MonoBinder"
+            },
+            {
+                "name":"Documentation",
+                "link":"https://github.com/AlexDavies8/MonoBinder/README.md"
+            }
+         ]
+      },
+      {
+         "name":"Plugin Template",
+         "description":"A blank template for creating plugins.",
+         "path":"Plugins/UnityPluginTemplate",
+         "links":[
+            {
+                "name":"Github Repository",
+                "link":"https://github.com/AlexDavies8/UnityPluginTemplate"
+            }
+         ]
+      }
+   ]
 }

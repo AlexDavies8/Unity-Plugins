@@ -6,7 +6,9 @@
     xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
 >
     <editor:Toolbar>
-        <editor:ToolbarSearchField/>
+        <editor:ToolbarSpacer style="flex-grow:1"/>
+        <editor:ToolbarButton text="↻" name="refresh-button"/>
+        <editor:ToolbarSearchField name="search-bar"/>
     </editor:Toolbar>
     
     <engine:VisualElement name="container">
@@ -21,14 +23,23 @@
             
             <engine:VisualElement name="plugin-data-container">
                 
-                <engine:Label name="plugin-title" text="title"/>
+                <engine:Label name="plugin-title" class="h1" text="title"/>
                 <engine:TextElement name="plugin-description" text="description"/>
+                <engine:Label name="plugin-link-header" class="h3" text="Links"/>
+
+                <engine:VisualElement name="plugin-link-container">
+                    
+                </engine:VisualElement>
                 
             </engine:VisualElement>
 
             <engine:VisualElement name="plugin-data-toolbar">
-                <engine:Button name="plugin-update-button" text="Install"/>
+                <engine:VisualElement name="loading-spinner-container">
+                    <engine:VisualElement name="loading-spinner"/>
+                </engine:VisualElement>
+                <engine:VisualElement style="flex-grow: 1"/>
                 <engine:Button name="plugin-remove-button" text="Remove"/>
+                <engine:Button name="plugin-update-button" text="Install"/>
             </engine:VisualElement>
             
         </engine:VisualElement>

@@ -13,7 +13,6 @@ namespace Plugins.PluginManager
         const string GitCommand = "git";
         const string SubmoduleStatusArgs = "submodule status";
         const string SubmoduleUpdateArgs = "submodule update --init {0}";
-        const string SubmoduleRemoveArgs = "rm -r {0}";
 
         public static List<string> GetAllSubmodules(string rootPath)
         {
@@ -137,14 +136,16 @@ namespace Plugins.PluginManager
             process.StartInfo.Arguments = string.Format(SubmoduleUpdateArgs, modulePath);
             process.StartInfo.WorkingDirectory = rootPath;
             process.StartInfo.UseShellExecute = false;
-            //process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.CreateNoWindow = true;
             process.EnableRaisingEvents = true;
             process.Exited += (obj, e) =>
             {
                 process.Close();
+                AssetDatabase.Refresh();
                 callback?.Invoke();
             };
             process.Start();
+            AssetDatabase.Refresh();
         }
         public static void RemoveSubmodule(string rootPath, string modulePath)
         {

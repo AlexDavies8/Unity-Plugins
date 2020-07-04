@@ -5,18 +5,12 @@
 
 #left-container
 {
-	width: 250px;
+	width: 200px;
 }
 
 #right-container
 {
 	flex-grow: 1;
-}
-
-#plugin-title
-{
-	font-size: 24px;
-	-unity-font-style: bold;
 }
 
 .vertical-line
@@ -56,11 +50,72 @@
 	padding: 5px 10px;
 }
 
+#plugin-data-container TextElement
+{
+	margin: 5px 0px;
+}
+
 #plugin-data-toolbar
 {
 	border-width: 1px 0px 0px 0px;
 	border-color: gray;
 	height: 30px;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	padding: 2px;
+}
+
+.h1
+{
+	font-size: 24px;
+	-unity-font-style: bold;
+}
+
+.h2
+{
+	font-size: 18px;
+	-unity-font-style: bold;
+}
+
+.h3
+{
+	font-size: 16px;
+	-unity-font-style: bold;
+}
+
+.link
+{
+	border-width: 0px 0px 1px 0px;
+	border-color: blue;
+	background-color: transparent;
+	padding: 0px;
+	margin:0px;
+	color: blue;
+	flex-grow: 0;
+	align-self: flex-start;
+	border-radius: 0px;
+}
+
+#loading-spinner
+{
+	width: 24px;
+	height: 24px;
+	margin: -12px 12px 12px -12px;
+	background-image: url("spinner.png");
+}
+
+#loading-spinner-container
+{
+	margin: 12px -12px -12px 12px;
+	width: 24px;
+	height: 24px;
+}
+
+#search-bar
+{
+	width: 200px;
+}
+
+#refresh-button
+{
+	padding: 3px 4px 4px 4px;
 }
